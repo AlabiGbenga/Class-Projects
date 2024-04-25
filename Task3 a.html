@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Task3a</title>
+    </head>
+<body>
+    <h1>Area of rectangle</h1>
+    length: <input type="number" name="length" id="length"><br>
+    
+    width: <input type="number" name="width" id="width"><br>
+    
+    <button onclick="area(document.getElementById('length').value,document.getElementById('width').value)"> Calculate </button>
+    <p>The area of the rectangle   is <span id="output"></span></p>
+    <script> 
+    function area(length, width) {
+        var result = parseInt(length) * parseInt(width);
+        document.getElementById("output").innerHTML = result;
+    }
+    </script>
+</body>
+</html>

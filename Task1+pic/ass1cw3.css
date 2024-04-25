@@ -1,0 +1,46 @@
+
+h1{
+    color: red;
+    /* font-size: 45px; */
+}
+
+
+img{
+    width: 70px;
+}
+
+/* Class */
+/* Id name */
+
+.gg{
+    color: green;
+}
+
+#title{
+    color: blue;
+    font-size: 50px;
+    font-style: italic;
+    background-color: green;
+    text-align: center;
+}
+
+.card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+    padding: 10px 25px;
+}
+
+.btn{
+    background: transparent;
+    border:  none;
+    background-color: green ;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}

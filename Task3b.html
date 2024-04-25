@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task3b</title>
+</head>
+<body>
+    <meta charset= "utf-8">
+    <script>
+        String.prototype.reverse=function(){
+            return this.split("").reverse().join("");
+        }
+    </script>
+    <p>
+        <label for="s">Input</label>
+        <input type = "text" id = "s" size = "25">
+    </p>
+    <p id = "t"></p>
+    <input type = "button" id = "r" value = "Reverse"
+           onclick="document.getElementById('t').innerHTML = document.getElementById('s').value.reverse();">
+</body>
+</html>
