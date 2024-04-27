@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>document</title>
+<style>
+  #itemList {
+    list-style-type: none;
+  }
+  .item {
+    margin-bottom: 5px;
+  }
+</style>
+</head>
+<body>
+  <h1>LIST YOUR FAVOURITE SUBJECTS</h1>
+
+  <ul id="subjectList">
+    <li class="subject">Subject 1</li>
+    <li class="subject">Subject 2</li>
+    <li class="subject">Subject 3</li>
+  </ul>
+
+  <button id="addSubjectBtn">Add New Subject</button>
+  <button id="changeColorBtn">Change Color</button>
+
+  <script>
+    document.getElementById('addSubjectBtn').addEventListener('click', function() {
+      const subjectList = document.getElementById('subjectList');
+      const newSubject = document.createElement('li');
+      newItem.textContent = 'New Subject';
+      newSubject.className = 'subject';
+      subjectList.appendChild(newSubject);
+    });
+
+    document.getElementById('changeColorBtn').addEventListener('click', function() {
+      const items = document.getElementsByClassName('subject');
+      for (let i = 0; i < items.length; i++) {
+        items[i].style.color = 'blue';
+      }
+    });
+  </script>
+</body>
+</html>
